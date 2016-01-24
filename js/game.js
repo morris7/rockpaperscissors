@@ -4,17 +4,34 @@ OVO.Game = (function(){
 
 
     var Game = function(){
-
-        this.userSelection = '';
-        this.computerSelection = '';
+        this.score;
+        this.init();
     }
 
     Game.prototype = {
 
+        init: function(){
+            this.bindUI();
+        },
+
         bindUI: function(){
+            var self = this,
+                images = document.getElementsByTagName('img');
+
+            images[0].addEventListener("click", function(){self.startChallenge(this)});
+            images[1].addEventListener("click", function(){self.startChallenge(this)});
+            images[2].addEventListener("click", function(){self.startChallenge(this)});
 
 
+        },
 
+        startChallenge: function(el){
+            var user = el.getAttribute('data-move'),
+                comp = this.getComputerSelection();
+
+            el.className += " border";
+
+            this.determineVictory(user, comp);
         },
 
         getComputerSelection: function(){
@@ -31,6 +48,19 @@ OVO.Game = (function(){
 
             return result;
 
+        },
+
+        determineVictory: function(user, comp){
+            if(user === comp){
+                console.log(user, comp, 'draw');
+            } else {
+                console.log(user, comp);
+                if (user === 'rock') {
+
+                } else if (user === 'paper') {
+
+                }
+            }
         }
 
     }
