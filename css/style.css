@@ -1,0 +1,99 @@
+body{
+    font-family: 'Bubblegum Sans', cursive;
+    background-color: #134265;
+}
+
+#fullWidth{
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+h1{
+    font-size: 50px;
+    color: #edad00;
+}
+
+.row{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.col-1 {width: 8.33%; float:left;}
+.col-2 {width: 16.66%; float:left;}
+.col-3 {width: 25%; float:left;}
+.col-4 {width: 33.33%; float:left;}
+.col-5 {width: 41.66%; float:left;}
+.col-6 {width: 50%; float:left;}
+.col-7 {width: 58.33%; float:left;}
+.col-8 {width: 66.66%; float:left;}
+.col-9 {width: 75%; float:left;}
+.col-10 {width: 83.33%; float:left;}
+.col-11 {width: 91.66%; float:left;}
+.col-12 {width: 100%; float:left;}
+
+div {
+    text-align: center;
+}
+
+img {
+    width: 50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+img:hover {
+    animation-name: pulse;
+    animation-duration: 1s;
+}
+
+@keyframes rubberBand {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.rubberBand {
+    animation-name: rubberBand;
+    animation-duration: 2s;
+}
