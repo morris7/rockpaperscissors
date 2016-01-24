@@ -5,6 +5,7 @@ OVO.Game = (function(){
 
     var Game = function(){
         this.score;
+        this.actions = [];
         this.init();
     }
 
@@ -12,21 +13,25 @@ OVO.Game = (function(){
 
         init: function(){
             this.bindUI();
+            this.bindEvents();
         },
 
         bindUI: function(){
-            var self = this,
-                images = document.getElementsByTagName('img');
+            this.actions = document.getElementsByTagName('img');
+        },
 
-            images[0].addEventListener("click", function(){self.startChallenge(this)});
-            images[1].addEventListener("click", function(){self.startChallenge(this)});
-            images[2].addEventListener("click", function(){self.startChallenge(this)});
+        bindEvents: function(){
+            var self = this;
+
+            this.actions[0].addEventListener("click", function(){self.startChallenge(this)});
+            this.actions[1].addEventListener("click", function(){self.startChallenge(this)});
+            this.actions[2].addEventListener("click", function(){self.startChallenge(this)});
 
 
         },
 
         startChallenge: function(el){
-            var user = el.getAttribute('data-move'),
+            var user = el.getAttribute('data-action'),
                 comp = this.getComputerSelection();
 
             el.className += " border";
