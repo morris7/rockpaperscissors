@@ -12,16 +12,16 @@
 
     <div id="fullWidth">
         <div class="row">
-            <div class="col-3">&nbsp;</div>
+            <div class="col-3"><span class="score">Your score: <span id="userScore">0</span></span></div>
             <div class="col-6 pulse">
                 <h1 class="rubberBand">Rock, Paper, Scissors</h1>
             </div>
-            <div class="col-3">&nbsp;</div>
+            <div class="col-3"><span class="score">Computer score: <span id="computerScore">0</span></span></div>
         </div>
         <div class="row">
             <div class="col-3">&nbsp;</div>
             <div class="col-2">
-                <img class="pulse" src="images/rock.png" data-action="rock"/>
+                <img src="images/rock.png" data-action="rock"/>
             </div>
             <div class="col-2">
                 <img src="images/paper.png" data-action="paper"/>
@@ -33,14 +33,14 @@
         </div>
         <div class="row">
             <div class="col-5">&nbsp;</div>
-            <div class="col-2 pulse">
+            <div class="col-2">
                 <div id="win" class="hide">
                     <h2>Win!</h2>
                 </div>
                 <div id="lose" class="hide">
                     <h2>Lose!</h2>
                 </div>
-                <div id="draw" class="draw hide">
+                <div id="draw" class="hide">
                     <h2>Draw!</h2>
                 </div>
             </div>

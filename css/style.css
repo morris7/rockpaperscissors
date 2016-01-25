@@ -84,14 +84,25 @@ img:hover {
     border: 2px solid #edad00;
 }
 
-.hinge {
+.lose {
     animation-name: hinge;
+    animation-duration: 3s;
+}
+
+.draw {
+    animation-name: slideInDown;
     animation-duration: 2s;
 }
 
-.slideInDown {
-    animation-name: slideInDown;
-    animation-duration: 2s;
+.win {
+    backface-visibility: visible;
+    animation-name: flip;
+    animation-duration: 1s;
+}
+
+.score {
+    color: #edad00;
+    font-size: 26px;
 }
 
 

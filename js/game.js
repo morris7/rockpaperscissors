@@ -4,8 +4,8 @@ OVO.Game = (function(){
 
 
     var Game = function(){
-        this.userScore;
-        this.computerScore;
+        this.userScore = 0;
+        this.computerScore = 0;
         this.actions = [];
         this.init();
     }
@@ -22,6 +22,8 @@ OVO.Game = (function(){
             this.winEl = document.getElementById('win');
             this.loseEl = document.getElementById('lose');
             this.drawEl = document.getElementById('draw');
+            this.userScoreEl = document.getElementById('userScore');
+            this.computerScoreEl = document.getElementById('computerScore');
         },
 
         bindEvents: function(){
@@ -34,12 +36,14 @@ OVO.Game = (function(){
         },
 
         startChallenge: function(el){
-            var user = el.getAttribute('data-action'),
+            var self = this,
+                user = el.getAttribute('data-action'),
                 comp = this.getComputerSelection();
 
             el.className += " border";
 
             this.determineVictory(user, comp);
+            setTimeout(function(){ self.resetGame(el)}, 2500);
         },
 
         getComputerSelection: function(){
@@ -59,17 +63,64 @@ OVO.Game = (function(){
         },
 
         determineVictory: function(user, comp){
+
+            var result = '';
+
             if(user === comp){
-                console.log(user, comp, 'draw');
-                this.drawEl.setAttribute('class','slideInDown');
+
+                this.drawEl.setAttribute('class','draw');
+
             } else {
-                console.log(user, comp);
+
                 if (user === 'rock') {
+                    if(comp === 'paper'){
+                        result = 'lose';
+                    } else {
+                        result = 'win';
+                    }
 
                 } else if (user === 'paper') {
 
+                    if(comp === 'scissors'){
+                        result = 'lose';
+                    } else {
+                        result = 'win';
+                    }
+
+                } else if (user === 'scissors'){
+
+                    if(comp === 'rock'){
+                        result = 'lose';
+                    } else {
+                        result = 'win';
+                    }
+
                 }
+
+                if(result === 'win'){
+
+                    this.winEl.setAttribute('class', 'win');
+                    this.userScoreEl.innerHTML = ++this.userScore;
+
+                } else {
+
+                    this.loseEl.setAttribute('class', 'lose');
+                    this.computerScoreEl.innerHTML = ++this.computerScore;
+
+                }
+
+
+                //console.log(user, comp);
             }
+        },
+
+        resetGame: function(el){
+
+            el.setAttribute('class', '');
+            this.winEl.setAttribute('class', 'hide');
+            this.loseEl.setAttribute('class', 'hide');
+            this.drawEl.setAttribute('class', 'hide');
+
         }
 
     }
