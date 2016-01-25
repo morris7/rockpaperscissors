@@ -7,6 +7,8 @@ OVO.Game = (function(){
         this.userScore = 0;
         this.computerScore = 0;
         this.actions = [];
+        this.compAction = '';
+        this.compActions = {};
         this.init();
     }
 
@@ -22,6 +24,13 @@ OVO.Game = (function(){
             this.winEl = document.getElementById('win');
             this.loseEl = document.getElementById('lose');
             this.drawEl = document.getElementById('draw');
+
+            this.compActions = {
+                'rock' : document.getElementById('compRock'),
+                'paper': document.getElementById('compPaper'),
+                'scissors': document.getElementById('compScissors')
+            };
+
             this.userScoreEl = document.getElementById('userScore');
             this.computerScoreEl = document.getElementById('computerScore');
         },
@@ -40,7 +49,7 @@ OVO.Game = (function(){
                 user = el.getAttribute('data-action'),
                 comp = this.getComputerSelection();
 
-            el.className += " border";
+            el.setAttribute('class', 'border');
 
             this.determineVictory(user, comp);
             setTimeout(function(){ self.resetGame(el)}, 2500);
@@ -57,6 +66,9 @@ OVO.Game = (function(){
             } else {
                 result = 'scissors';
             }
+
+            this.compActions[result].setAttribute('class', 'show');
+            this.compAction = result;
 
             return result;
 
@@ -120,6 +132,7 @@ OVO.Game = (function(){
             this.winEl.setAttribute('class', 'hide');
             this.loseEl.setAttribute('class', 'hide');
             this.drawEl.setAttribute('class', 'hide');
+            this.compActions[this.compAction].setAttribute('class', 'hide');
 
         }
 

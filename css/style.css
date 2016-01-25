@@ -7,14 +7,6 @@ body{
     display: none;
 }
 
-#fullWidth{
-    width: 100%;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-}
-
 h1{
     font-size: 50px;
     color: #edad00;
@@ -22,8 +14,22 @@ h1{
 }
 
 h2{
-    font-size: 80px;
+    font-size: 50px;
     text-shadow: 1px 1px #000;
+}
+
+h3 {
+    font-size: 26px;
+    color: #edad00;
+    text-shadow: 1px 1px #000;
+}
+
+#fullWidth{
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
 }
 
 #draw{
@@ -38,11 +44,7 @@ h2{
     color: #df3420;
 }
 
-
-.row{
-    width: 100%;
-    margin-bottom: 20px;
-}
+.row {width: 100%; margin-bottom: 10px;}
 .col-1 {width: 8.33%; float:left;}
 .col-2 {width: 16.66%; float:left;}
 .col-3 {width: 25%; float:left;}
