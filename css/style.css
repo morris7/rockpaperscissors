@@ -3,6 +3,10 @@ body{
     background-color: #134265;
 }
 
+.hide {
+    display: none;
+}
+
 #fullWidth{
     width: 100%;
     display: -webkit-flex;
@@ -14,7 +18,26 @@ body{
 h1{
     font-size: 50px;
     color: #edad00;
+    text-shadow: 1px 1px #000;
 }
+
+h2{
+    font-size: 80px;
+    text-shadow: 1px 1px #000;
+}
+
+#draw{
+    color: #edad00;
+}
+
+#win{
+    color: #47c62d
+}
+
+#lose {
+    color: #df3420;
+}
+
 
 .row{
     width: 100%;
@@ -42,6 +65,7 @@ img {
     -webkit-border-radius:50%;
     -moz-border-radius:50%;
     border-radius:50%;
+    box-shadow: 0px 0px 15px #000;
 }
 
 img:hover {
@@ -58,6 +82,16 @@ img:hover {
 
 .border {
     border: 2px solid #edad00;
+}
+
+.hinge {
+    animation-name: hinge;
+    animation-duration: 2s;
+}
+
+.slideInDown {
+    animation-name: slideInDown;
+    animation-duration: 2s;
 }
 
 

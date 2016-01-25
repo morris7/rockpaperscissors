@@ -4,7 +4,8 @@ OVO.Game = (function(){
 
 
     var Game = function(){
-        this.score;
+        this.userScore;
+        this.computerScore;
         this.actions = [];
         this.init();
     }
@@ -18,6 +19,9 @@ OVO.Game = (function(){
 
         bindUI: function(){
             this.actions = document.getElementsByTagName('img');
+            this.winEl = document.getElementById('win');
+            this.loseEl = document.getElementById('lose');
+            this.drawEl = document.getElementById('draw');
         },
 
         bindEvents: function(){
@@ -26,7 +30,6 @@ OVO.Game = (function(){
             this.actions[0].addEventListener("click", function(){self.startChallenge(this)});
             this.actions[1].addEventListener("click", function(){self.startChallenge(this)});
             this.actions[2].addEventListener("click", function(){self.startChallenge(this)});
-
 
         },
 
@@ -58,6 +61,7 @@ OVO.Game = (function(){
         determineVictory: function(user, comp){
             if(user === comp){
                 console.log(user, comp, 'draw');
+                this.drawEl.setAttribute('class','slideInDown');
             } else {
                 console.log(user, comp);
                 if (user === 'rock') {
