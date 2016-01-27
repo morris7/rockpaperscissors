@@ -9,6 +9,10 @@ app.directive('action', function(){
     return {
         restrict: 'E',
         templateUrl:'directives/action.html'
-
     };
-});
+}).directive('result', function(){
+    return {
+        restrict: 'E',
+        templateUrl:'directives/result.html'
+    };
+})
