@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d96369d-9355-48f8-a871-f9d690b88806" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VanillaVersion/images/paper.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VanillaVersion/images/rock.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VanillaVersion/images/scissors.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VanillaVersion/css/animations.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VanillaVersion/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VanillaVersion/directives/action.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VanillaVersion/directives/result.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VanillaVersion/js/controllers/gameController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VanillaVersion/js/gameAngular.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/animations.css" afterPath="$PROJECT_DIR$/AngularVersion/css/animations.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/AngularVersion/css/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/directives/action.html" afterPath="$PROJECT_DIR$/AngularVersion/directives/action.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/directives/result.html" afterPath="$PROJECT_DIR$/AngularVersion/directives/result.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/paper.png" afterPath="$PROJECT_DIR$/AngularVersion/images/paper.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/rock.png" afterPath="$PROJECT_DIR$/AngularVersion/images/rock.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/scissors.png" afterPath="$PROJECT_DIR$/AngularVersion/images/scissors.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/VanillaVersion/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/indexAngular.html" afterPath="$PROJECT_DIR$/AngularVersion/indexAngular.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/controllers/gameController.js" afterPath="$PROJECT_DIR$/AngularVersion/js/controllers/gameController.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/game.js" afterPath="$PROJECT_DIR$/VanillaVersion/js/game.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/gameAngular.js" afterPath="$PROJECT_DIR$/AngularVersion/js/gameAngular.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AngularVersion/indexAngular.html" afterPath="$PROJECT_DIR$/AngularVersion/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
     </list>
     <ignored path="rockPaperScissors.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,21 +24,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VanillaVersion/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.084870845">
+            <state vertical-scroll-proportion="-1.9166666">
               <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="indexAngular.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AngularVersion/indexAngular.html">
+      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.208333">
-              <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AngularVersion/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2693727">
+              <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -92,6 +82,7 @@
         <option value="$PROJECT_DIR$/js/controllers/gameController.js" />
         <option value="$PROJECT_DIR$/AngularVersion/indexAngular.html" />
         <option value="$PROJECT_DIR$/VanillaVersion/index.html" />
+        <option value="$PROJECT_DIR$/readme.txt" />
       </list>
     </option>
   </component>
@@ -265,7 +256,7 @@
     <frame x="7" y="23" width="1260" height="686" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24939467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24939467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -422,18 +413,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AngularVersion/indexAngular.html">
+    <entry file="file://$PROJECT_DIR$/VanillaVersion/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.208333">
-          <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+        <state vertical-scroll-proportion="-1.9166666">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VanillaVersion/index.html">
+    <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.084870845">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularVersion/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2693727">
+          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
           <folding />
         </state>
       </provider>
