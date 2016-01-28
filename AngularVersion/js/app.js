@@ -5,12 +5,12 @@
 
 var app = angular.module('app', []);
 
-app.directive('action', function(){
+app.directive('gameAction', function(){
     return {
         restrict: 'E',
         templateUrl:'directives/action.html'
     };
-}).directive('result', function(){
+}).directive('gameResult', function(){
     return {
         restrict: 'E',
         templateUrl:'directives/result.html'

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rock Paper Scissors</title>
-    <link href="../VanillaVersion/css/animations.css" type="text/css" rel="stylesheet" />
-    <link href="../VanillaVersion/css/style.css" type="text/css" rel="stylesheet" />
+    <link href="css/animations.css" type="text/css" rel="stylesheet" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Bubblegum+Sans' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 </head>
@@ -22,7 +22,7 @@
 
         <div class="row">
             <div class="col-3">&nbsp;</div>
-            <action ng-repeat="action in actions"></action>
+            <game-action ng-repeat="action in actions"></game-action>
             <div class="col-3">&nbsp;</div>
         </div>
 
@@ -36,19 +36,19 @@
 
         <div class="row">
             <div class="col-5">&nbsp;</div>
-            <action ng-repeat="action in actions | filter: {comp:true}"></action>
+            <game-action ng-repeat="action in actions | filter: {comp:true}"></game-action>
             <div class="col-5">&nbsp;</div>
         </div>
 
         <div class="row">
             <div class="col-5">&nbsp;</div>
-            <result ng-if="gameResult"></result>
+            <game-result ng-if="gameResult"></game-result>
             <div class="col-5">&nbsp;</div>
         </div>
 
     </div>
 
-    <script src="../VanillaVersion/js/gameAngular.js" type="text/javascript"></script>
-    <script src="../VanillaVersion/js/controllers/gameController.js"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+    <script src="js/controllers/gameController.js"></script>
 </body>
 </html>

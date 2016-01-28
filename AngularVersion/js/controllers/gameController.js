@@ -21,7 +21,7 @@ app.controller('GameController',['$scope', '$timeout', function($scope, $timeout
             {
                 "name": "scissors",
                 "selected": false,
-                "comp":false
+                "comp": false
             }
         ];
 
@@ -36,6 +36,7 @@ app.controller('GameController',['$scope', '$timeout', function($scope, $timeout
         actionModel.selected = true;
 
         $scope.determineVictory(action, comp);
+
         $timeout(function(){ $scope.reset()}, 2500);
 
     };
@@ -126,7 +127,7 @@ app.controller('GameController',['$scope', '$timeout', function($scope, $timeout
 
         $scope.actions = angular.copy($scope.initialData);
         $scope.gameResult = '';
-        console.log($scope.actions);
+        //console.log($scope.actions);
 
     }
 
